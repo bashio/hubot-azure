@@ -96,6 +96,7 @@ git config user.email \'$BOT_EMAIL\'; git config user.name \'$BOT_NAME\'; git co
 git push --quiet 2>&1 >> $LOG_FILE
 
 # Remove the repos from the system as housekeeping
+cd ..
 rm -rf $TEMPLATE_REPO $REPO_NAME
 
 
