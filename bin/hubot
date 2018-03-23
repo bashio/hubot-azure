@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+# npm install
+export PATH="node_modules/bin:node_modules/hubot/bin:$PATH"
+echo "Running hubot.coffee"
+exec /d/home/site/wwwroot/bin/hubot.coffee --name "azure-bot" "$@" -a slack
