@@ -6,6 +6,7 @@
   "description": "(Your very own Hubot)",
   "dependencies": {
     "async": "~1.4.2",
+    "azure-storage": "^2.8.1",
     "coffee-script": "^1.12.6",
     "hubot": "^2.19.0",
     "hubot-auth": "^2.1.0",
