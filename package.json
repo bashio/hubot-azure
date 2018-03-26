@@ -5,9 +5,11 @@
   "author": "Michael Johnson <migarjo@github.com>",
   "description": "(Your very own Hubot)",
   "dependencies": {
+    "async": "~1.4.2",
     "coffee-script": "^1.12.6",
     "hubot": "^2.19.0",
     "hubot-auth": "^2.1.0",
+    "hubot-azure-brain": "^1.0.0",
     "hubot-diagnostics": "0.0.2",
     "hubot-google-images": "^0.2.7",
     "hubot-google-translate": "^0.2.1",
@@ -20,9 +22,9 @@
     "hubot-scripts": "^2.17.2",
     "hubot-shipit": "^0.2.1",
     "hubot-slack": "^4.3.4",
-    "underscore": "*",
+    "npm": "^5.8.0",
     "redis": "~0.12.1",
-    "async": "~1.4.2"
+    "underscore": "*"
   },
   "engines": {
     "node": "0.10.x"
