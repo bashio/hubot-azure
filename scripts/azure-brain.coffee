@@ -41,7 +41,8 @@ module.exports = (robot) ->
   else if useEmulator
     blobSvc = azure.createBlobService azure.generateDevelopmentStorageCredentials()
   else if !connectionString
-    throw new Error "hubot-azure-brain requires HUBOT_BRAIN_AZURE_CONNSTRING"
+    robot.logger.warn "HUBOT_BRAIN_AZURE_CONNSTRING is null. Disabling brain storage"
+    brainIsDisabled=true
   else
     blobSvc = azure.createBlobService connectionString
 
